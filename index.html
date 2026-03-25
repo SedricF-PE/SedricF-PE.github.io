@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="#">Sedric Fackenthall</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/SedricF-PE" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      </div>
+    </div>
+  </nav>
+
   <header class="hero">
     <div class="hero-text">
       <p class="eyebrow">Portfolio</p>
@@ -17,7 +29,7 @@
       <p class="intro">
         I enjoy building, troubleshooting, and improving technical systems. My background
         combines computer science knowledge with hands-on experience in 3D printer hardware,
-        software workflows, and practical problem solving.
+        software workflows, Linux configuration, and practical problem solving.
       </p>
 
       <div class="hero-buttons">
@@ -29,8 +41,26 @@
   </header>
 
   <main>
-    <section class="about">
-      <h2>About Me</h2>
+    <section class="stats">
+      <div class="stat-card">
+        <h3>Hands-On Builds</h3>
+        <p>Hardware assembly, tuning, and troubleshooting across real projects.</p>
+      </div>
+      <div class="stat-card">
+        <h3>Technical Workflow</h3>
+        <p>Experience with calibration, configuration, and iterative problem solving.</p>
+      </div>
+      <div class="stat-card">
+        <h3>Practical Focus</h3>
+        <p>Interested in projects where technical solutions create real-world value.</p>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-heading">
+        <p class="section-label">About</p>
+        <h2>Building systems, solving problems, and improving performance</h2>
+      </div>
       <p>
         I have a background in computer science and hands-on technical work, including building
         and troubleshooting 3D printers and solving real-world technical problems. I’m especially
@@ -40,32 +70,74 @@
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
+      <div class="section-heading">
+        <p class="section-label">Projects</p>
+        <h2>Selected Work</h2>
+      </div>
 
       <div class="project-grid">
-	  
         <a class="card-link" href="projects/custom-3d-printer.html">
-			<article class="card">
-				<h3>Custom 3D Printer Build</h3>
-				<p>Assembly, calibration, and troubleshooting of a custom-built printer.</p>
-			</article>
-		</a>
+          <article class="card">
+            <span class="card-tag">Hardware / Calibration</span>
+            <h3>Custom 3D Printer Build</h3>
+            <p>
+              Assembly, calibration, and troubleshooting of a custom-built printer,
+              including setup, tuning, and reliability improvements.
+            </p>
+            <span class="card-cta">View project →</span>
+          </article>
+        </a>
 
         <a class="card-link" href="projects/desk-mtg-light.html">
-			<article class="card">
-				<h3>Desktop Diffuse Light</h3>
-				<p>A modular light for your desk that provides indirect diffuse light. Originally created to assist with playing TCG games online with an overhead camera.</p>
-			</article>
-		</a>
+          <article class="card">
+            <span class="card-tag">Design / Fabrication</span>
+            <h3>Desktop Diffuse Light</h3>
+            <p>
+              A modular desk light designed to provide indirect diffuse lighting,
+              originally created to improve overhead camera visibility for TCG play.
+            </p>
+            <span class="card-cta">View project →</span>
+          </article>
+        </a>
 
         <a class="card-link" href="projects/klipper-install.html">
-			<article class="card">
-				<h3>Installing, Configuring, and Troubleshooting Linux and Klipper</h3>
-				<p>Diagnosing and fixing real-world hardware and software issues.</p>
-			</article>
-		</a>
+          <article class="card">
+            <span class="card-tag">Linux / Troubleshooting</span>
+            <h3>Installing, Configuring, and Troubleshooting Linux and Klipper</h3>
+            <p>
+              Diagnosing and fixing real-world hardware and software issues during
+              Linux setup, configuration, and Klipper deployment.
+            </p>
+            <span class="card-cta">View project →</span>
+          </article>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="section-heading">
+        <p class="section-label">Contact</p>
+        <h2>Links and Resume</h2>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card" href="https://github.com/SedricF-PE" target="_blank" rel="noopener noreferrer">
+          <h3>GitHub</h3>
+          <p>View repositories, code, and project work.</p>
+        </a>
+        <a class="contact-card" href="resume.pdf" target="_blank" rel="noopener noreferrer">
+          <h3>Resume</h3>
+          <p>Open a PDF version of my current resume.</p>
+        </a>
+        <a class="contact-card" href="mailto:sedricfackenthall@gmail.com">
+          <h3>Email</h3>
+          <p>sedricfackenthall@gmail.com</p>
+        </a>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Sedric Fackenthall</p>
+  </footer>
 </body>
 </html>
