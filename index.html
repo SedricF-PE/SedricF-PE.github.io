@@ -7,46 +7,89 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Sedric Fackenthall</h1>
-    <p>Computer Science graduate | 3D printing | Technical problem solver</p>
+  <header class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Sedric Fackenthall</h1>
+      <p class="subtitle">
+        Computer Science graduate, 3D printing builder, and technical problem solver.
+      </p>
+      <p class="intro">
+        I enjoy building, troubleshooting, and improving technical systems. My background
+        combines computer science knowledge with hands-on experience in 3D printer hardware,
+        software workflows, and practical problem solving.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="button primary" href="#projects">View Projects</a>
+        <a class="button secondary" href="https://github.com/SedricF-PE" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="button secondary" href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section>
+    <section class="about">
       <h2>About Me</h2>
       <p>
-        I have a background in computer science and hands-on technical work,
-        including building and troubleshooting 3D printers and solving
-        real-world technical problems.
+        I have a background in computer science and hands-on technical work, including building
+        and troubleshooting 3D printers and solving real-world technical problems. I’m especially
+        interested in work that involves diagnosing issues, improving systems, and delivering
+        practical solutions.
       </p>
     </section>
 
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
 
-      <article>
-        <h3>Custom 3D Printer Build</h3>
-        <p>
-          Built, configured, and tuned a custom 3D printer, including hardware
-          assembly, calibration, and troubleshooting.
-        </p>
-      </article>
+      <div class="project-grid">
+        <article class="card">
+          <h3>Custom 3D Printer Build</h3>
+          <p>
+            Built, configured, and tuned a custom 3D printer from the ground up, including
+            hardware assembly, calibration, and troubleshooting.
+          </p>
+          <ul>
+            <li>Assembled and configured printer hardware</li>
+            <li>Calibrated motion, extrusion, and print settings</li>
+            <li>Diagnosed and resolved reliability issues</li>
+          </ul>
+        </article>
 
-      <article>
-        <h3>Printer Workflow and Optimization</h3>
-        <p>
-          Worked with slicing software, print quality tuning, maintenance,
-          and workflow improvements to improve reliability and output quality.
-        </p>
-      </article>
+        <article class="card">
+          <h3>Printer Workflow Optimization</h3>
+          <p>
+            Improved printing workflow by working with slicing software, print quality tuning,
+            maintenance, and reliability improvements.
+          </p>
+          <ul>
+            <li>Adjusted slicer settings for better print quality</li>
+            <li>Performed maintenance and troubleshooting</li>
+            <li>Improved consistency and output reliability</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Technical Problem Solving</h3>
+          <p>
+            Applied structured troubleshooting to hardware and software issues, focusing on
+            finding practical solutions and improving performance.
+          </p>
+          <ul>
+            <li>Investigated root causes of technical issues</li>
+            <li>Tested and implemented fixes</li>
+            <li>Documented improvements and results</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
-    <section>
+    <section class="links">
       <h2>Links</h2>
       <ul>
-        <li><a href="https://github.com/SedricF-PE" target="_blank">GitHub</a></li>
-        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://github.com/SedricF-PE" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="mailto:sedricfackenthall@gmail.com">sedricfackenthall@gmail.com</a></li>
       </ul>
     </section>
   </main>

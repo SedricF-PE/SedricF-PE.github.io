@@ -1,32 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
   line-height: 1.6;
   color: #222;
+  background: #f7f8fa;
 }
 
-header {
-  margin-bottom: 2rem;
+.hero,
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-section {
-  margin-bottom: 2rem;
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 
-h1, h2, h3 {
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #666;
   margin-bottom: 0.5rem;
 }
 
-ul {
-  padding-left: 1.25rem;
+h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 0 0 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.intro {
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.button.primary {
+  background: #222;
+  color: #fff;
+}
+
+.button.secondary {
+  background: #e9ecef;
+  color: #222;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.links ul {
+  padding-left: 1.2rem;
 }
 
 a {
-  text-decoration: none;
+  color: #111;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+  }
+
+  .hero,
+  main {
+    padding: 1.25rem;
+  }
 }
