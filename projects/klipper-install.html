@@ -10,7 +10,74 @@
   <main class="project-page">
     <a class="back-link" href="../index.html">← Back to Portfolio</a>
 
-    
+    <section class="project-hero">
+		<div class="project-hero-content">
+		
+			<p class="eyebrow">Project</p>
+			<h1>The Software Side Of 3D printing</h1>
+
+			<p class="project-subtitle">
+				Installing and configuring a raspberry pie to communicate with the 3D printer's microcontroller.
+			</p>
+
+			<p class="project-summary">
+				Argueably the most important thing in a 3D printer is the software. If it doesen't have that then
+				you have a rather odd shaped paper weight. So I have spent substanshial time working on and with 
+				firmware and software. The primary DIY method and the one I went with is installing whats called 
+				Klipper, A type of firmware that acts as a bridge between a microcontroller and an install of 
+				linux with some sort of interface for performing actions from it.
+			</p>
+		</div>
+		
+		<div class="project-meta">
+			<span>Linux</span>
+			<span>Troubleshooting</span>
+		</div>
+	</section>
+<section class="project-content-block">
+  <h2>Challenges and Solutions</h2>
+
+  <p>
+    Setting up a Linux-based control system, spesfically klipper runs on Debian, for the printer 
+	and installing Klipper introduced several challenges related to system configuration, firmware 
+	setup, and hardware communication. I had some initial issues and difficulty establishing reliable 
+	connections between the host system and the printer’s microcontroller, as well as configuration 
+	errors that prevented the system from starting correctly. This can stem from poor-quality USB 
+	cables to EM interference.
+  </p>
+
+  <p>
+    To address these issues, I used a systematic troubleshooting approach, verifying device 
+	connections, reviewing system logs, and adjusting configuration files to match the hardware 
+	setup. Through iterative testing and refinement, I was able to establish stable communication, 
+	resolve configuration errors by swapping out the USB for one more suited for the job, and 
+	install more reliable COM port drivers that other people seemed to have success with. Luckly I 
+	chose a raspberry pi 3b for this install and it has a very robust and healthy ecosystem of 
+	drivers and support forums.
+  </p>
+
+  <p>
+    This process strengthened my ability to diagnose complex technical problems across both 
+	hardware and software layers, and reinforced the importance of structured debugging and 
+	incremental testing when working with integrated systems. On top of that, it also reinforced 
+	being very thorough with testing and NOT skipping over simple things because it didn't make 
+	sense immediately why that would be causing the problem.
+  </p>
+
+  <h3>Resources Used</h3>
+
+  <ul class="resource-links">
+    <li>
+      <a href="https://www.klipper3d.org/" target="_blank">Klipper Documentation</a>
+    </li>
+    <li>
+      <a href="https://docs.fluidd.xyz/" target="_blank">Fluidd Interface</a>
+    </li>
+    <li>
+      <a href="https://docs.mainsail.xyz/" target="_blank">Mainsail Interface</a>
+    </li>
+  </ul>
+</section>
   </main>
 </body>
 </html>

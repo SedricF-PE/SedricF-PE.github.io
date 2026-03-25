@@ -624,3 +624,32 @@ section {
     font-size: 0.98rem;
   }
 }
+.project-content-block {
+  background: #ffffff;
+  color: #1f2937;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+}
+
+/* Force readable text */
+.project-content-block p {
+  color: #374151;
+}
+
+.project-content-block h2,
+.project-content-block h3 {
+  color: #111827;
+}
+
+/* Links */
+.project-content-block a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-content-block a:hover {
+  text-decoration: underline;
+}
