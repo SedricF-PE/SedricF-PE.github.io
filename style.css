@@ -22,8 +22,11 @@ main {
 }
 
 .hero {
-  padding-top: 4rem;
-  padding-bottom: 3rem;
+  background: linear-gradient(135deg, #1f2937, #374151);
+  color: #ffffff;
+  border-radius: 16px;
+  margin-top: 2rem;
+  padding: 3rem 2rem;
 }
 
 .eyebrow {
@@ -33,6 +36,17 @@ main {
   font-weight: bold;
   color: #666;
   margin-bottom: 0.5rem;
+}
+.hero .eyebrow {
+  color: #9ca3af;
+}
+
+.hero .subtitle {
+  color: #e5e7eb;
+}
+
+.hero .intro {
+  color: #d1d5db;
 }
 
 h1 {
@@ -75,15 +89,15 @@ h1 {
 }
 
 .button.primary {
-  background: #222;
-  color: #fff;
+  background: #ffffff;
+  color: #111;
 }
 
 .button.secondary {
-  background: #e9ecef;
-  color: #222;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  backdrop-filter: blur(4px);
 }
-
 section {
   margin-bottom: 3rem;
 }
