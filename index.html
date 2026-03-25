@@ -7,7 +7,18 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="logo" href="#top">Sedric Fackenthall</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
     <div class="hero-text">
       <p class="eyebrow">Portfolio</p>
       <h1>Sedric Fackenthall</h1>
@@ -29,7 +40,7 @@
   </header>
 
   <main>
-    <section class="about">
+    <section class="about" id="about">
       <h2>About Me</h2>
       <p>
         I have a background in computer science and hands-on technical work, including building
@@ -50,9 +61,9 @@
             hardware assembly, calibration, and troubleshooting.
           </p>
           <ul>
-            <li>Assembled and configured printer hardware</li>
-            <li>Calibrated motion, extrusion, and print settings</li>
-            <li>Diagnosed and resolved reliability issues</li>
+            <li>Hardware assembly and setup</li>
+            <li>Calibration and tuning</li>
+            <li>Troubleshooting mechanical issues</li>
           </ul>
         </article>
 
@@ -63,9 +74,9 @@
             maintenance, and reliability improvements.
           </p>
           <ul>
-            <li>Adjusted slicer settings for better print quality</li>
-            <li>Performed maintenance and troubleshooting</li>
-            <li>Improved consistency and output reliability</li>
+            <li>Slicer configuration</li>
+            <li>Reliability improvements</li>
+            <li>Print quality adjustments</li>
           </ul>
         </article>
 
@@ -73,24 +84,25 @@
           <h3>Technical Problem Solving</h3>
           <p>
             Applied structured troubleshooting to hardware and software issues, focusing on
-            finding practical solutions and improving performance.
+            root-cause analysis and practical solutions.
           </p>
           <ul>
-            <li>Investigated root causes of technical issues</li>
-            <li>Tested and implemented fixes</li>
-            <li>Documented improvements and results</li>
+            <li>Issue diagnosis</li>
+            <li>Testing and validation</li>
+            <li>Performance improvements</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <section class="links">
-      <h2>Links</h2>
-      <ul>
-        <li><a href="https://github.com/SedricF-PE" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-        <li><a href="mailto:sedricfackenthall@gmail.com">sedricfackenthall@gmail.com</a></li>
-      </ul>
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="assets/printer1.jpg" alt="3D printer build" />
+        <img src="assets/printer2.jpg" alt="3D printer close-up" />
+        <img src="assets/print1.jpg" alt="Finished 3D print" />
+        <img src="assets/workbench.jpg" alt="Printer workbench setup" />
+      </div>
     </section>
   </main>
 </body>
