@@ -22,20 +22,11 @@ main {
 }
 
 .hero {
-  background: linear-gradient(135deg, #1f2937, #374151);
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
   color: #ffffff;
   border-radius: 16px;
   margin-top: 2rem;
   padding: 3rem 2rem;
-}
-
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.85rem;
-  font-weight: bold;
-  color: #666;
-  margin-bottom: 0.5rem;
 }
 .hero .eyebrow {
   color: #9ca3af;
@@ -47,6 +38,15 @@ main {
 
 .hero .intro {
   color: #d1d5db;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -98,6 +98,7 @@ h1 {
   color: #ffffff;
   backdrop-filter: blur(4px);
 }
+
 section {
   margin-bottom: 3rem;
 }
