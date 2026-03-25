@@ -1,59 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Custom 3D Printer Build | Sedric Fackenthall</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
+
 <body>
   <main class="project-page">
     <a class="back-link" href="../index.html">← Back to Portfolio</a>
 
-    <section class="project-hero">
-      <h1>Custom 3D Printer Build</h1>
-      <p>
-        A custom 3D printer project focused on assembly, calibration,
-        troubleshooting, and improving print reliability.
-      </p>
-    </section>
+
+	<section class="project-hero">
+		<div class="project-hero-content">
+		
+			<p class="eyebrow">Project</p>
+			<h1>Custom 3D Printer Build</h1>
+
+			<p class="project-subtitle">
+				A custom-built 3D printer focused on assembly, calibration, and improving
+				print speed, and pushing the limits of the hardware and software.
+			</p>
+
+			<p class="project-summary">
+				Why did I decide to build a 3D printer? Well first I got rather frustrated at the performance, or rather
+				the lack of it that my previous heavily modified ender 3 pro had. So I found a project by Segei Ibis on Printables.
+				It is two Ender 3s put togather to create a better printer. However, I ran into a problem rather quickly. My Ener 3 was
+				lets say "not stock" so I had a bunch of parts that wont work with the duender platform. So in an act of overambition
+				I decided that I would take matters into my own hands and work on an overhaul of the project to really push the 
+				platform to it's limits.
+			</p>
+		</div>
+		
+		<div class="project-meta">
+			<span>Hardware</span>
+			<span>Firmware</span>
+			<span>Calibration</span>
+			<span>Troubleshooting</span>
+		</div>
+	</section>
 
     <section>
-      <h2>Overview</h2>
-      <p>
-        This project involved building and configuring a custom 3D printer,
-        tuning hardware and software settings, and solving reliability issues
-        during setup and testing.
-      </p>
-    </section>
+	<h2>Build Progress</h2>
 
-    <section>
-      <h2>Key Features</h2>
-      <ul>
-        <li>Custom hardware assembly</li>
-        <li>Motion and extrusion calibration</li>
-        <li>Print quality tuning</li>
-        <li>Troubleshooting and reliability improvements</li>
-      </ul>
-    </section>
+		<div class="timeline">
+			
+			<div class="timeline-item">
+				<img src="../assets/3D-0-Print-problems.jpg" alt="Step 1" />
+				<div class="timeline-text">
+					<h3>Example of Poor performance</h3>
+					<p>
+					During the initial prints of the Duender parts, my current printer was shifting the layers, as highlighted 
+					in the YouTube thumbnail red circles. This was caused by the stepper motors being unable to move and skipping 
+					steps, resulting in the actual location of the print head being different than the expected location. To solve 
+					this, I found that the two linear rails that the bed rides on were binding up during certain parts of the travel 
+					along the y-axis, resulting in the motors not being able to move, causing the aforementioned step skipping. This 
+					could have also been solved by increasing the amperage given to the motors in the Klipper firmware, but that 
+					really doesn't resolve the core issue. Also, I had little faith that the system could properly handle increasing 
+					the amperage that much.
+					</p>
+				</div>
+			</div>
 
-    <section>
-      <h2>Progress Gallery</h2>
-      <div class="gallery-grid">
-        <img src="../assets/printer-build-1.jpg" alt="3D printer frame assembly" />
-        <img src="../assets/printer-build-2.jpg" alt="Wiring and electronics setup" />
-        <img src="../assets/printer-build-3.jpg" alt="Calibration and testing prints" />
-      </div>
-    </section>
+			<div class="timeline-item">
+				<img src="../assets/3D-1-No-gantry.jpg" alt="Step 2" />
+				<div class="timeline-text">
+					<h3>First Assembly of the Frame</h3>
+					<p>
+					After getting the initial printing figured out for the part,s I did this assembly of the aluminum cannel. Making 
+					sure that the whole frame is square to itself is extremely important; tuning the thing is a nightmare (ask me how I know). 
+					I had a fairly flat stone countertop to work on, so I think I got the frame quite square.
+					</p>
+				</div>
+			</div>
 
-    <section>
-      <h2>Challenges and Solutions</h2>
-      <p>
-        One of the biggest parts of this project was identifying sources of
-        print inconsistency and systematically adjusting settings, components,
-        and calibration steps to improve performance.
-      </p>
-    </section>
+			<div class="timeline-item">
+				<img src="../assets/3D-2-With-gantry.jpg" alt="Step 3" />
+				<div class="timeline-text">
+					<h3>Getting the Gantry, Motors, and Hardware installed</h3>
+					<p>
+					Here I have assembled the gantry, made sure that it too was square, and installed the motors, pulleys, and idlers. 
+					As well as the motors for the bed, the two silver rods extending upwards are T8 lead screws. It is at this point 
+					that things began to get, let's say, "ambitious." I didn't like the idea of the bed being moved up and down on rigid 
+					rails on only two sides. I also decided that the motors that I had were lacking. Why? Not sure, probably the same 
+					reason I wanted to get a new graphics card despite mine working perfectly fine. On top of that, the design of the 
+					front belt tensioners was starting to make me see red whenever I looked at them. So let the scope creep begin.
+					</p>
+				</div>
+			</div>
+
+			<div class="timeline-item">
+				<img src="../assets/3D-3-Print-Head.jpg" alt="Step 4" />
+				<div class="timeline-text">
+					<h3>The Print Head</h3>
+					<p>
+					But first, the print head needs to be addressed; this is a rather important part of the printer, as it is the thing 
+					that actually squirts out the plastic. Now the original Duender uses a custom print head designed by the creator. I 
+					did not have the parts for that, and I felt that if I was going to order parts, then I would go with something I could 
+					get more performance out of. At first, I was trying to make my own print head, but I eventually found a project called 
+					"Archetype" created by Armchair Industries. So I decided that I should use something with an existing robust ecosystem 
+					to move the project along instead of stubbornly insisting on creating my own.
+					</p>
+				</div>
+			</div>
+
+			<div class="timeline-item">
+				<img src="../assets/3D-4-Tension.png" alt="Step 5" />
+				<div class="timeline-text">
+					<h3>Slim Belt Tensioners</h3>
+					<p>
+					The first thing I decided to tackle is the front belt tensioners, I didn't like the profile of the previous ones. 
+					I decreaced the amount it sticks out by 3/4 of an inch and I added a spot for a third bolt preventing it from 
+					twisting. It's also at this point that I decided to start printing in a more robust plastic. However, the current 
+					Ender 3 pro that I had could not print more engineering type plastics. So..... I got a new printer and tore down the 
+					Ender for parts. I ended up getting an Elegoo Centuari Carbon so all parts from now on will be printed in white 
+					Glass Fiber ABS.
+					</p>
+				</div>
+			</div>
+
+			<div class="timeline-item">
+				<img src="../assets/3D-4-Printed-tensioner.jpg" alt="Step 6" />
+				<div class="timeline-text">
+					<h3></h3>
+					<p>
+					Here is one of the tensioners printed in glass fiber ABS.
+					</p>
+				</div>
+			</div>
+
+			<div class="timeline-item">
+				<img src="../assets/3D-5-Motor-Mounts.png" alt="Step 7" />
+				<div class="timeline-text">
+					<h3>Doing Somthing About the Bed</h3>
+					<p>
+					At this point, I am looking to upgrade how the bed works. The system that I decided to go with is a tri-point 
+					z-axis. With this system, you control the print bed with three independent points connected to T8 lead screws. 
+					With 3 points of control, you can completely control a plane, aka the bed. This makes the only variable that makes 
+					things difficult is the actual bed itself and how flat it is. With that to start, I made the motor mounts to attach 
+					to the base aluminum extrusions. They are held on with 2 M5x8 bolts holding on the front two mounts and 4 M5x8 bolts 
+					holding on the center rear mount.
+					</p>
+				</div>
+			</div>
+
+			<div class="timeline-item">
+				<img src="../assets/3D-6-Bed-Mounts.png" alt="Step 8" />
+				<div class="timeline-text">
+					<h3>Mounts for the Bed Itself</h3>
+					<p>
+					Next, I made the counterpart to the motor mounts, the mounts for the bed. Each bed mount contains a section 
+					at the end made up of two M3 rods positioned above and on either side of a magnet in the center. This magnet 
+					holds a steel ball attached to the bed, allowing it to rotate and move around freely while still being held 
+					down to the mount. Then the way that the mount is actuated up and down is on an MGN9H x 300mm rail on each mount, 
+					which constrains the movement to just the z-axis. Then the lead screw is attached to the mount with what's called 
+					an old ham coupler that allows the side-to-side play of the lead screw to not affect the movement of the mount, 
+					again constraining movement to only up and down.
+					</p>
+				</div>
+			</div>
+
+			<div class="timeline-item">
+				<img src="../assets/3D-7-Overall-new.jpg" alt="Step 9" />
+				<div class="timeline-text">
+					<h3>Where The Project I Right Now</h3>
+					<p>
+					As it stands, the next step for the printer is to start hooking up the electronics and power systems. I decided to make 
+					a DIN rail system to make it modular for ease of working on and for future upgrades. I also don't really like how the 
+					bed mounts turned out. They don't really have the range of motion that I want them to have, so I am working on a v2 as 
+					well for the bed system.
+					</p>
+				</div>
+			</div>
+			<div class="timeline-item">
+				<img src="../assets/Useful-Link.jpg" alt="Step 9" />
+				<div class="timeline-text">
+					<h3>Links and Stuff</h3>
+					<p>
+					Here is the link to the Onshape for this project: <a href="https://cad.onshape.com/documents/b674257974c1309bb910d81d/w/8660b950abad0439bab4c095/e/554b80693509f4c7868cd70f?renderMode=0&uiState=69c4438c08382e0466917188">Tri Bed MGN9h</a><br>
+					
+					Duener Project by Sergei Irbis on Printables: <a href= "https://www.printables.com/model/1300968-duender-mgn9h-2x-creality-ender-3-corexy-convertio">Duender MGN9H Ender-3 CoreXY convertion</a><br>	
+					
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
   </main>
 </body>
 </html>
